@@ -1,11 +1,16 @@
 # nippy-flavor-9468
 # Project Title
 
-SoundWave is an e-commerce platform for selling audio devices. This Project was done by a team of three memebers over the course of five days. We used Typescript, React and Chakra UI for styling.
+SoundWave is an e-commerce platform for selling audio devices. This Project was done by a team of three members over the course of five days. We used Typescript, React and Chakra UI for styling.
 
 # Project Description
 
 SoundWave sells a variety of audio devices (headphones, earphones and pods). Users can login, manage their cart and place orders.
+
+## Meet the team!
+- https://github.com/Abhishree-codes
+- https://github.com/nikhil-pillare
+- https://github.com/CODEwithSANKETj
 
 ## 🔗 Links
 
