@@ -1,4 +1,4 @@
 [build]
   base = "my-app"
   command = "npm run build"
-  publish = "soundwave/my-app/build"
+  publish = "my-app/build"
