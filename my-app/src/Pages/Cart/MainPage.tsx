@@ -30,7 +30,7 @@ function MainPage()
 
   useEffect(()=>{
 
-    axios.get(`https://nippy-flavour-backend.bhishree18.repl.co/cart`)
+    axios.get(`https://soundwave-uz75.onrender.com/cart`)
       .then((res)=>{
 
           let total = res.data

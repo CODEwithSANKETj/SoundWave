@@ -15,7 +15,7 @@ export const reducer = (state:Cart_state = inti,action:Cart_actions)=>{
     }
 
     case ADD_TO_CART:{
-      axios.post(`https://nippy-flavour-backend.bhishree18.repl.co/cart/`,action.item)
+      axios.post(`https://soundwave-uz75.onrender.com/cart/`,action.item)
       .then((res)=>{
         
       })
@@ -26,7 +26,7 @@ export const reducer = (state:Cart_state = inti,action:Cart_actions)=>{
       return {...state,cart : [...state.cart,action.item]}
     }
     case REMOVE_FROM_CART:{
-      axios.delete(`https://nippy-flavour-backend.bhishree18.repl.co/cart/${action.item.id}`)
+      axios.delete(`https://soundwave-uz75.onrender.com/cart/${action.item.id}`)
       .then((res)=>{
 
       })
@@ -49,7 +49,7 @@ export const reducer = (state:Cart_state = inti,action:Cart_actions)=>{
       return {...state,total_amount:total}
     }
     case CHANAGE_QUANTITY:{
-      axios.patch(`https://nippy-flavour-backend.bhishree18.repl.co/cart/${action.item.id}`,action.item)
+      axios.patch(`https://soundwave-uz75.onrender.com/cart/${action.item.id}`,action.item)
       .then((res)=>{
 
       })

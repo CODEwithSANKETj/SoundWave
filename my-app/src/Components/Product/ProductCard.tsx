@@ -31,7 +31,7 @@ const [data,setData]=useState<singleProduct>({id:0,name:"",price:"",description:
 rating: 0,brand:""});
 console.log(data)
 useEffect(()=>{
-axios.get(`https://nippy-flavour-backend.bhishree18.repl.co/products/${id}`).then((res)=>{
+axios.get(`https://soundwave-uz75.onrender.com/products/${id}`).then((res)=>{
 setData(res.data);
 })
 
@@ -41,7 +41,7 @@ function addToCart(){
 const selectedColorName= data?.colors[0].name
   const selectedColorUrl =  data?.cartImage;
   const dat = { quantity, ...data, cartImage: selectedColorUrl,color: selectedColorName, SelectedColorId: 1  };
-  axios.post(`https://nippy-flavour-backend.bhishree18.repl.co/cart`, dat).then((res) => {
+  axios.post(`https://soundwave-uz75.onrender.com/cart`, dat).then((res) => {
     console.log(res.data);
     toast({
       title: "Product added.",

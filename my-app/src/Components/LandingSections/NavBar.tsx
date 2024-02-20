@@ -102,7 +102,7 @@ import { shallowEqual, useSelector } from "react-redux";
      
         axios
           .get(
-            `https://nippy-flavour-backend.bhishree18.repl.co/products?name_like=${value}`
+            `https://soundwave-uz75.onrender.com/products?name_like=${value}`
           )
           .then((res: AxiosResponse) => {
             // console.log(res.data)

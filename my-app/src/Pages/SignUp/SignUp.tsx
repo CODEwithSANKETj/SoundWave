@@ -179,7 +179,7 @@ import { Signup_Success } from "../../Redux/AuthReducer/apiType";
     
     const postUserDetails=()=>{
       //loader here
-      axios.post("https://nippy-flavour-backend.bhishree18.repl.co/users",{
+      axios.post("https://soundwave-uz75.onrender.com/users",{
         "name":details.firstName+" "+details.lastName,
         "email":details.email,
         "password":details.password

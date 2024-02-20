@@ -8,7 +8,7 @@ type GetUserFunction = (email: string, password: string) => (dispatch: disType) 
 export const getuser:GetUserFunction=(email:string,password:string)=>(dispatch:disType)=>{
   
    return new Promise((resolve, reject) => {
-      axios.get('https://nippy-flavour-backend.bhishree18.repl.co/users')
+      axios.get('https://soundwave-uz75.onrender.com/users')
         .then((res) => {
           const foundUser = res.data.find((user: any) => email === user.email && password === user.password);
           if (foundUser) {
@@ -42,7 +42,7 @@ export const getuser:GetUserFunction=(email:string,password:string)=>(dispatch:d
 
 export const adduser=(newUser:user)=>(dispatch:disType)=>{
    dispatch({type:Login_Request})
-    axios.post(`https://nippy-flavour-backend.bhishree18.repl.co/users`,newUser).then((res)=>{
+    axios.post(`https://soundwave-uz75.onrender.com/users`,newUser).then((res)=>{
       dispatch({type:Signup_Success,payload:res.data as any})
     })
     .catch((err)=>{
